@@ -58,6 +58,11 @@ main {
     margin-bottom: 96px;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
+
 .btn {
     background-color: #6415ff;
     padding: 12px 32px;
@@ -76,7 +81,6 @@ main {
     color:rgb(36, 62, 99);
     line-height: 1.5;
     margin: 16px 0;
-    text-align: center;
     letter-spacing: 0.025em;
  }
 
@@ -97,11 +101,11 @@ main {
     line-height: 1.5;
 }
 
-.section__title,
+/* .section__title,
 .section__para,
 .section__tag {
     text-align: left;
-}
+} */
 /* 
 
 NAV BAR 
@@ -330,6 +334,10 @@ FEATURES
     line-height: 2;
     font-weight: 500;
 }
+
+#features .section__title, #pricing .section__title {
+    text-align: center;
+}
 /* 
 
 QUALITY SECTION 
@@ -440,6 +448,11 @@ VALUES
 
 */
 
+.value__title {
+    display: flex;
+    align-items: center;
+}
+
 .values__description, .values__img {
     width: 50%;
 }
@@ -457,8 +470,200 @@ VALUES
     margin-left: 0;
     margin-right: 0;
     display: flex;
+    max-width: none;
+    flex-direction: row;
 }
 
+.value {
+    margin-top: 32px;
+    margin-right: 32px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.value__img {
+    height: 20px;
+    width: 20px;
+}
+
+.value__img--wrapper {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-style: groove;
+    border-color:rgb(207, 195, 231);
+}
+
+.value__name {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(36, 62, 99);
+}
+
+.value__para {
+    margin-top: 16px;
+    line-height: 1.5;
+    color: #718096
+}
+
+#values .btn {
+    margin-top: 48px;
+}
+
+/* 
+
+
+PRICING
+
+*/
+
+#pricing .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing .section__para {
+    max-width: 576px;
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.plan {
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    max-width: 384px;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 32px 8px;
+    text-align: center;
+    color: rgb(26 32 44);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+}
+
+.plan__stripe {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.plan__top {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    text-transform: uppercase;
+    line-height: 1.625;
+}
+
+.plan__name, .plan__price, .plan__duration {
+    font-weight: bold;
+    line-height: 1.625;
+}
+
+.plan__name {
+    font-size: 20px;
+}
+
+.plan__price {
+    font-size: 48px;
+    margin: 4px 0;
+}
+
+.plan__duration {
+    font-size: 16px;
+    letter-spacing: 1.2px;
+}
+
+.plan__middle {
+    margin: 0 -32px;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    padding: 32px;
+}
+
+.plan__target {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.plan__feature {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.plan__bottom {
+    padding: 32px 64px;
+}
+
+.plan__btn {
+    border-radius: 0.25rem;
+    background-color: rgb(100 21 255);
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    color: rgb(247 250 252);
+    transition: all 300ms ease;
+    width: 100%;
+    border-radius: 9999px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.plan:nth-child(odd) .plan__duration {
+    color: #a0aec0;
+}
+
+.plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__btn {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan:nth-child(2) .plan__name, .plan:nth-child(2) .plan__price, .plan:nth-child(2) .plan__target, .plan:nth-child(2) .plan__duration, .plan:nth-child(2) .plan__feature {
+    color: #f7fafc;
+}
+
+.plan:nth-child(odd) .plan__name, .plan:nth-child(odd) .plan__price, .plan:nth-child(odd) .plan__target {
+    color: #1a202c;
+}
+
+.plan:nth-child(1) .plan__middle, .plan:nth-child(3) .plan__middle {
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
 /* SMALL SCREENS */
 
 @media (max-width: 1280px) {
