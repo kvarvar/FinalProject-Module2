@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/d77916ffd5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -30,8 +31,16 @@
             <a href="#" class="nav__link login">Login</a>
             <a href="#" class="nav__link nav__link--primary">Sign Up</a>
           </div>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
       </nav>
+      <div class="menu">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+      </div>
       <header>
         <div class="container">
           <div class="row">
@@ -479,5 +488,65 @@
         </div>
       </section>
     </main>
+    <footer>
+        <div class="row footer__row">
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <div class="footer__column--title">MAIN</div>
+                    <a href="" class="footer__column--link">Blog</a>
+                    <a href="" class="footer__column--link">FAQ'S</a>
+                    <a href="" class="footer__column--link">Support</a>
+                    <a href="" class="footer__column--link">About Us</a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title">PRODUCT</div>
+                    <a href="" class="footer__column--link">Login</a>
+                    <a href="" class="footer__column--link">Personal</a>
+                    <a href="" class="footer__column--link">Business</a>
+                    <a href="" class="footer__column--link">Team</a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title">PRESS</div>
+                    <a href="" class="footer__column--link">Logos</a>
+                    <a href="" class="footer__column--link">Events</a>
+                    <a href="" class="footer__column--link">Stories</a>
+                    <a href="" class="footer__column--link">Office</a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title">TEAM</div>
+                    <a href="" class="footer__column--link">Careers</a>
+                    <a href="" class="footer__column--link">Founders</a>
+                    <a href="" class="footer__column--link">Culture</a>
+                    <a href="" class="footer__column--link">Onboarding</a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title">LEGAL</div>
+                    <a href="" class="footer__column--link">GDPR</a>
+                    <a href="" class="footer__column--link">Privacy Policy</a>
+                    <a href="" class="footer__column--link">Terms of Service</a>
+                    <a href="" class="footer__column--link">Disclaimer</a>
+                </div>
+                <div class="footer__divider"></div>
+                <div class="footer__bottom">
+                    <div class="footer__logo">
+                        <img src="/assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="" class="footer__logo--img">
+                        <h5 class="footer__logo--text">Treact Inc.</h5>
+                    </div>
+                    <div class="footer__copyright">© 2018 Treact Inc. All Rights Reserved.</div>
+                    <div class="footer__socials">
+                        <a href="" class="footer__social--link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="footer__social--link">
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                        </a>
+                        <a href="" class="footer__social--link">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
