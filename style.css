@@ -1207,7 +1207,7 @@ footer {
         padding-bottom: 4px;
         margin: 8px 0px;
     }
-    
+
     .header__email {
         flex-direction: column;
         height: auto;
@@ -1217,12 +1217,17 @@ footer {
         overflow: visible;
         background: transparent;
         gap: 16px;
+        padding: 0;
     }
 
     .header__email--input {
-        position: static;
-        line-height: 1.5;
-        padding: 16px 0px 16px 32px;
+        flex: none;
+        height: 60px;
+        padding: 0 24px;
+        border: 2px solid #e5e7eb;
+        border-radius: 9999px;
+        background: white;
+        font-size: 16px;
     }
     
 
