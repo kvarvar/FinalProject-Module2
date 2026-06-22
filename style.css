@@ -18,7 +18,7 @@ body {
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -359,10 +359,16 @@ FEATURES
     position: relative;
  }
 
-.row__narrow {
+#features .row__narrow {
     display: flex;
     flex-direction: column;
     align-items: center;
+ }
+
+ .row__narrow {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
  }
 
  .features {
@@ -413,6 +419,12 @@ FEATURES
 QUALITY SECTION 
 
 */
+
+#quality .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .quality__description {
     /* display: flex; */
@@ -466,6 +478,7 @@ STEPS
      padding: 32px 64px;
 }
 
+
 .step {
     display: flex;
     align-items: start;
@@ -495,6 +508,10 @@ STEPS
     position: relative;
 }
 
+.steps__img {
+    z-index: 2;
+}
+
 .step__title {
     font-weight: 600;
     font-size: 20px;
@@ -516,6 +533,12 @@ STEPS
 VALUES
 
 */
+
+#values .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .value__title {
     display: flex;
@@ -1126,35 +1149,68 @@ footer {
         font-size: 32px;
     }
 
-    /* Two-column sections start stacking here */
-    .quality__description,
-    .quality__img--wrapper,
-    .steps__description,
-    .steps__img--wrapper,
-    .step__description,
-    .values__description,
-    .values__img,
-    .testimonials__img,
-    .testimonials__description {
-        width: 100%;
+    .section__para {
+        font-size: 16px;
     }
 
-    #quality .row,
+    .quality__description {
+        margin-right: 0px;
+        padding-right: 48px;
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+
+    .values__list {
+        max-width: 320px;
+        flex-direction: column;
+    }
+
+    #features .section__title, #pricing .section__title {
+        font-size: 48px;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        margin-right: 0px;
+    }
+
+    #testimonials .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    footer {
+        padding: 80px 32px;
+    }
+
+    /* Two-column sections start stacking here */
+    /* .quality__description,
+    .quality__img--wrapper,
+    .step__description,
+    .testimonials__description {
+        width: 100%;
+    } */
+
+    /* #quality .row,
     #steps .row,
     #values .row,
     #testimonials .row {
         flex-direction: column;
-    }
+    } */
 
-    .quality__description,
-    .steps__description,
-    .values__description,
+    /* .values__description,
     .testimonials__description {
         padding: 32px 0;
         margin: 0;
         max-width: 100%;
         text-align: center;
-    }
+    } */
 }
 
 /* ============================
