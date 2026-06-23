@@ -411,6 +411,11 @@ FEATURES
     font-weight: 500;
 }
 
+#features .section__para {
+    text-align: center;
+    max-width: 576px;
+}
+
 #features .section__title, #pricing .section__title {
     text-align: center;
 }
@@ -1174,6 +1179,19 @@ footer {
 
     #features .section__title, #pricing .section__title {
         font-size: 48px;
+    }
+
+    .features {
+        max-width: 768px;
+    }
+
+    .feature {
+        width: calc(50%);
+    }
+
+    .feature__row {
+        padding: 32px 8px;
+        margin: 0 16px;
     }
 
     .plans {
